@@ -5,7 +5,7 @@ export default class HomeBody extends Component {
   render() {
     return (
         <>
-            <div className="body">
+            <div className="main-body">
                 <h1>Join the <span>Battle</span></h1>
                 <button>Get Started</button>
             </div>

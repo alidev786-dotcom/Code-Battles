@@ -14,11 +14,13 @@ nav{
         padding-top: 40px;
         padding-left: 10%;
         padding-right: 10%;
+        position:sticky;
 }
 
 .logo{
-    color:white;
     font-size: 28px;
+    color:white;
+    text-decoration: none;
 }
 
 span{
@@ -42,7 +44,7 @@ nav ul li a:hover{
     transition: .3s;
 }
 
-button{
+.navbar-buttons button{
     border:none;
     background: #ea1538;
     padding: 12px 30px;
@@ -51,9 +53,10 @@ button{
     font-weight: bold;
     font-size: 15px;
     transition: .4s;
+    width: 150px;
 }
 
 button:hover{
-    transform:scale(1.3);
+    transform:scale(1.1);
     cursor:pointer;
 }

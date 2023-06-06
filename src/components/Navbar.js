@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Navbar.css";
 import { GiBiceps } from "react-icons/gi";
+import {Link} from 'react-router-dom';
 
 export default class Navbar extends React.Component {
   constructor() {
@@ -11,12 +12,11 @@ export default class Navbar extends React.Component {
       <>
         <nav>
           <h2 className="logo">
-            Code <span>Battles </span>
-            <GiBiceps/>
+            <Link to="/home" style={{ textDecoration: 'none' , color:'white'}}>Code <span>Battles </span><GiBiceps/></Link>
           </h2>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>
               <a href="#">About</a>
@@ -25,10 +25,15 @@ export default class Navbar extends React.Component {
               <a href="#">Contact us</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <Link to="/signup">Login</Link>
+            </li>
+            <li>
+              <Link to="/profile">My Profile</Link>
             </li>
           </ul>
-          <button type="button">Login/Signup</button>
+          <div class="navbar-buttons">
+            <Link to="/signup"><button type="button">Login</button></Link>
+          </div>
         </nav>
       </>
     );
